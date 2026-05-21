@@ -33,7 +33,7 @@ class Show extends Model implements Feedable
             ->title($this->title)
             ->summary($this->slug)
             ->updated(Carbon::parse(new \DateTime('2023-05-15')))
-            ->link("http//localhost:8000/show/".$this->id)
+            ->link("show/".$this->id)
             ->authorName("Bob Sull")
             ->authorEmail("bob@sull.com");
     }
