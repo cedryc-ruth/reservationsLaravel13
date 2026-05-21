@@ -9,3 +9,6 @@ Route::get('/', function () {
 
 Route::get('/artist', [ArtistController::class, 'index'])->name('artist.index');
 Route::get('/artist/{id}', [ArtistController::class, 'show'])->name('artist.show');
+
+//Ajout des routes pour le flux RSS
+Route::feeds();
